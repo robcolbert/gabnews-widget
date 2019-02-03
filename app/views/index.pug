@@ -1,0 +1,7 @@
+extends layout
+block content
+
+  h1 Current Gab.com Top News
+  each item in news.rssFeedItems
+    p
+      a(href= item.link)= item.title
